@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'conecte',
-    'jc_contabilidade',
-    'lg_distribuidora',
+    #'jc_contabilidade',
+    #'lg_distribuidora',
 ]
 
 MIDDLEWARE = [
