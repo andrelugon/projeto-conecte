@@ -23,6 +23,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('conecte.urls')),
-    #path('jccontabilidade/', include('jc_contabilidade.urls')),
+    path('jccontabilidade/', include('jc_contabilidade.urls')),
     path('lgdistribuidora/', include('lg_distribuidora.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

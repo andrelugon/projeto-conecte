@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'conecte',
-    #'jc_contabilidade',
+    'jc_contabilidade',
     'lg_distribuidora',
 ]
 
