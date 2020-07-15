@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'conecte',
     #'jc_contabilidade',
     'lg_distribuidora',
+    'supermercado_ficticio',
 ]
 
 MIDDLEWARE = [
