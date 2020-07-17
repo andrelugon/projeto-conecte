@@ -1,8 +1,8 @@
 from django.urls import path, include
-from .views import home_lgdistribuidora
+from .views import home_jccontabilidade
 
 
 urlpatterns = [
-    path('', home_lgdistribuidora),
+    path('', home_jccontabilidade),
 
 ]

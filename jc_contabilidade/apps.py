@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class LgDistribuidoraConfig(AppConfig):
-    name = 'lg_distribuidora'
+    name = 'jc_contabilidade'

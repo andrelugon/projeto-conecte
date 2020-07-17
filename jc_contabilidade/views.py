@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from . models import dado, produto, serviço
 
-def home_lgdistribuidora(request):
+def home_jccontabilidade(request):
     lista_dados = dado.objects.all()
     lista_produtos = produto.objects.all()
     lista_serviços = serviço.objects.all()
