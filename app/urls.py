@@ -25,4 +25,5 @@ urlpatterns = [
     path('home/', include('conecte.urls')),
     path('jccontabilidade/', include('jc_contabilidade.urls')),
     path('lgdistribuidora/', include('lg_distribuidora.urls')),
+    path('supermercadoficticio/', include('supermercado_ficticio.urls')),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
