@@ -4,3 +4,4 @@
 media
 ../venv_gestor
 .env
+db.sqlite3
