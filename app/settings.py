@@ -28,9 +28,8 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = [
-    'projeto-conecte.herokuapp.com',
-    '34.123.213.231/'
-    '127.0.0.1'
+    'localhost',
+    '34.123.213.231'
     ]
 
 
