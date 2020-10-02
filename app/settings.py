@@ -29,10 +29,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'localhost',
-    '34.123.213.231',
     'conecte.online'
     ]
-
 
 # Application definition
 
