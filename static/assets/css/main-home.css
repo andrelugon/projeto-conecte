@@ -2336,11 +2336,6 @@ position: relative;
         top: 30px;
         left: 10px;}}}
 
-h6 {
-text-align: right;
-font-size: 13pt;
-}
-
 h4 {
 text-align: center;
 font-size: 12pt;
@@ -2350,6 +2345,11 @@ h5 {
 text-align: left;
 color: #b3b3b8ff;
 font-size: 12pt;
+}
+
+h6 {
+text-align: right;
+font-size: 13pt;
 }
 
 img{
