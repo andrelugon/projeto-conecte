@@ -26,15 +26,20 @@
 								<section id="banner">
 									<div class="content">
 										<header>
-										<h2>
-											Conheça serviços, produtos e ofertas disponíveis na sua região!
-										</h2>
-										<p>Antes de fechar qualquer negócio, conecte e pesquise!
-											Economia para você e valorização das empresas do seu bairro!
-											<br><br>Feche negócio com quem você conhece!</p>
-										<ul class="actions">
-											<li><a href="/home/empresas" class="button big">Acesse agora!</a></li>
-										</ul>
+											<h2>
+												Conecte fácil!
+											</h2>
+											<p>Informe o nome, o bairro ou o ramo de atuação e encontre as empresas mais próximas de você!</p>
+											<br>
+											<section>
+												<form method=”GET”>
+													<input type="text" class="form-control" placeholder="Pesquisar" name="search" id="search">
+													<br>
+													<div class=”input-group-prepend”>
+														<button class=”btn btn-outline-secondary” type=”submit” id=”button-addon1">Buscar</button>
+													</div>
+												</form>
+											</section>
 										</header>
 									</div>
 									<span class="image object">
@@ -43,28 +48,31 @@
 								</section>
 														<!-- Section -->
 								<section>
-									<hr>
-									<div class="features">
-										<article>
-											<span class="icon solid fa-network-wired"></span>
-											<div class="content">
-												<h3>Sua empresa tem uma página na internet?</h3>
-												<p>Conheça a solução Conecte!<br>
-													E saiba como disponibilizar	a sua marca na web! <a href="/home/cadastro">Clique aqui!</a>
+									<table class="table table-striped">
 
-												</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-share-alt"></span>
-											<div class="content">
-												<h3>Conecte.online<br>Compartilhe essa ideia!</h3>
-												<p>Quanto mais empresas anunciam,<br>
-													mais serviços e produtos estarão disponíveis para consulta!</p>
-											</div>
-										</article>
-									</div>
-								</section>
+										{% for value in list|slice:":1" %}
+											{% if value.nome_fantasia != '' %}
+												<thead class="thead-dark">
+													<tr>
+														<th scope="col">Resultado da sua pesquisa:</th>
+														<th scope="col">Telefone</th>
+													</tr>
+												</thead>
+											{% endif %}
+										{% endfor %}
+
+										{% for value in list %}
+												<tbody>
+													<tr>
+														<td><a href="{{value.observações}}">{{value.nome_fantasia}}</a></td>
+														<td>{{value.telefone_fixo}}</td>
+
+													</tr>
+												</tbody>
+										{% endfor %}
+									</table>
+									</section>
+
 
 							<!-- Section -->
 								<section>
@@ -85,6 +93,7 @@
 					<div id="sidebar">
 						<div class="inner">
 
+							<!-- Search -->
 
 
 							<!-- Menu -->
@@ -93,10 +102,8 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="/home">Home</a></li>
+										<li><a href="../..">Home</a></li>
 										<li><a href="/home/empresas">Guia Comercial</a></li>
-										<li><a href="/home/controle">Controle</a></li>
-										<li><a href="/home/buscar">Conecte fácil</a></li>
 										<li><a href="/admin">Administração</a></li>
 										<li><a href="#">Sobre nós</a></li>
 
