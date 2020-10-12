@@ -6,7 +6,7 @@
 		<title>conecte.online</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href='{% static "assets/css/main-home.css" %}'/>
+		<link rel="stylesheet" href='{% static "assets/css/main-conecte.css" %}'/>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -14,45 +14,26 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<!-- Header -->
-								<header id="header">
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
+								<header id="header" >
+									<!--Logomarca -->
+									<div class="topo">
+											<img id="logomarca" src='{% static "images/logomarca/home.png" %}' alt="" />
+									</div>
 								</header>
-							<!-- Banner -->
+
 								<section id="banner">
-									<div>
-										<span class="image object">
-											<img src='{% static "images/logomarca/conecte.png" %}' alt="" />
-										</span>
-									</div>
+
 									<div class="content">
-											<br>
-											<br>
-											<h3>As melhores ofertas da sua região!</h3>
+										<br>
+										<h1>Guia comercial</h1>
 
-
-												<form method=”GET”>
-													<input type="text" class="form-control" placeholder="Pesquise por produtos, serviços ou empresas" name="search" id="search">
-													<br>
-													<br>
-													<div class=”input-group-prepend”>
-														<button class=”btn btn-outline-secondary” type=”submit” id=”button-addon1">Buscar</button>
-													</div>
-												</form>
-									</div>
-
-								</section>
 														<!-- Section -->
-								<section>
 									<table class="table table-striped">
 										{% for value in list|slice:":1" %}
 											{% if value.nome_fantasia != '' %}
-												<hr>
-												<h3>Resultado da sua pesquisa</h3>
+										<br>
+												<p>Resultado da pesquisa realizada:</p>
+
 												<thead class="thead-dark">
 													<tr>
 														<th scope="col">Empresa</th>
@@ -71,36 +52,52 @@
 												</tbody>
 										{% endfor %}
 									</table>
-									<div>
-										{% for value in list|slice:":1" %}
-													<div>
-														<h5><a href="../..">Limpar</a></h5>
-													</div>
-										{% endfor %}
-									</div>
-									</section>
 
+										{% for value in list|slice:":1" %}
+
+										<br>
+										<p>Faça uma nova pesquisa: </p>
+
+										{% endfor %}
+
+
+										<form method=”GET”>
+											<input type="text" class="form-control" placeholder="Pesquise por produtos, serviços ou empresas" name="search" id="search">
+											<br>
+											<div class=”input-group-prepend”>
+												<button class=”btn btn-outline-secondary” type=”submit” id=”button-addon1">Buscar</button>
+											</div>
+										</form>
+									</div>
+								</section>
+
+
+									<hr>
 									<div class="features">
 
 										<article>
 											<span class="icon solid fa-bullhorn"></span>
 											<div class="content">
-												<h3><a href="home/novo_cliente">Anuncie aqui!</a></h3>
+												<h6><a href="home/novo_cliente">Anuncie aqui!</a></h6>
 												<p>
 													Solicite agora mesmo uma página na web para sua empresa e faça parte do catálogo de parceiros.
 												</p>
 											</div>
 										</article>
+
 										<article>
 											<span class="icon solid fa-clipboard-list"></span>
 											<div class="content">
-												<h3><a href="home/empresas">Catálogo de clientes</a></h3>
-												<p>Quanto mais empresas anunciam,<br>
-													mais serviços e produtos estarão disponíveis para consulta!</p>
+												<h6><a href="home/empresas">Catálogo de clientes</a></h6>
+												<p>
+													Quanto mais empresas anunciam, mais serviços e produtos estarão disponíveis para consulta!
+												</p>
 											</div>
+
 										</article>
+
 									</div>
-								</section>
+
 						</div>
 					</div>
 
@@ -142,3 +139,14 @@
 			<script src='{% static "assets/js/main.js" %}'></script>
 
 	</body>
+
+							<!-- Header
+								<header id="header">
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
+							Banner -->
+							<!-- Header -->
