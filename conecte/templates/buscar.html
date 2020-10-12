@@ -14,26 +14,29 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-								<header id="header" >
+								<header id="header">
 									<!--Logomarca -->
 									<div class="topo">
 											<img id="logomarca" src='{% static "images/logomarca/home.png" %}' alt="" />
 									</div>
 								</header>
+									<!-- TÍTULO -->
+									<div class="features">
+										<article>
+											<div class="content">
+												<br>
+												<h1>conecte.online</h1>
+												Economize e valorize as empresas do seu bairro!
+											</div>
+										</article>
+									</div>
 
-								<section id="banner">
-
-									<div class="content">
-										<br>
-										<h1>Guia comercial</h1>
-
-														<!-- Section -->
+									<!-- TABELA DE RESULTADOS DA BUSCA -->
 									<table class="table table-striped">
 										{% for value in list|slice:":1" %}
 											{% if value.nome_fantasia != '' %}
-										<br>
-												<p>Resultado da pesquisa realizada:</p>
-
+												<hr>
+												<h7>Resultado da pesquisa:</h7><br><br>
 												<thead class="thead-dark">
 													<tr>
 														<th scope="col">Empresa</th>
@@ -53,51 +56,26 @@
 										{% endfor %}
 									</table>
 
+									<!-- REALIZAR UMA NOVA BUSCA -->
 										{% for value in list|slice:":1" %}
-
-										<br>
-										<p>Faça uma nova pesquisa: </p>
-
+											<hr>
+											<h7>Faça uma nova pesquisa:</h7><br><br>
 										{% endfor %}
-
-
-										<form method=”GET”>
-											<input type="text" class="form-control" placeholder="Pesquise por produtos, serviços ou empresas" name="search" id="search">
-											<br>
-											<div class=”input-group-prepend”>
-												<button class=”btn btn-outline-secondary” type=”submit” id=”button-addon1">Buscar</button>
-											</div>
-										</form>
-									</div>
-								</section>
-
-
-									<hr>
+									<!-- BARRA DE BUSCA -->
 									<div class="features">
-
 										<article>
-											<span class="icon solid fa-bullhorn"></span>
 											<div class="content">
-												<h6><a href="home/novo_cliente">Anuncie aqui!</a></h6>
-												<p>
-													Solicite agora mesmo uma página na web para sua empresa e faça parte do catálogo de parceiros.
-												</p>
+												<form method=”GET”>
+													<input type="text" class="form-control" placeholder="Pesquise por produtos, serviços ou empresas" name="search" id="search">
+													<br>
+													<div class=”input-group-prepend”>
+														<button class=”btn btn-outline-secondary” type=”submit” id=”button-addon1">Buscar</button>
+													</div>
+												</form>
 											</div>
 										</article>
-
-										<article>
-											<span class="icon solid fa-clipboard-list"></span>
-											<div class="content">
-												<h6><a href="home/empresas">Catálogo de clientes</a></h6>
-												<p>
-													Quanto mais empresas anunciam, mais serviços e produtos estarão disponíveis para consulta!
-												</p>
-											</div>
-
-										</article>
-
 									</div>
-
+									<hr>
 						</div>
 					</div>
 
@@ -140,13 +118,3 @@
 
 	</body>
 
-							<!-- Header
-								<header id="header">
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-								</header>
-							Banner -->
-							<!-- Header -->
