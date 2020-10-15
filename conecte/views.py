@@ -10,7 +10,7 @@ def home_conecte(request):
 def empresas(request):
     return render(request, 'empresas.html')
 
-@login_required()
+
 def controle(request):
     clientes = cliente.objects.all()
     return render(request, 'controle.html', {'cliente': clientes})

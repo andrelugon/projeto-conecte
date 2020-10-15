@@ -1,8 +1,10 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
-
-
-
+/*
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -58,75 +60,6 @@ input, select, textarea {
   -ms-appearance: none;
   appearance: none; }
 
-.tela_login{
-    height: 100vh;
-    position: relative;
-}
-
-.caixa_login {
-    width: 390px;
-    height: 580px;
-    position: absolute;
-    top: 46%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
-}
-
-@media screen and (max-width: 360px) {
-    .caixa_login{
-    top:60%}
-}
-
-@media screen and (min-width: 768px) {
-    .caixa_login{
-    width: 390px;
-    height: 760px;
-    box-shadow: 0.5px 1px 15px #999999;
-    }
-}
-
-#img_login {
-    position: absolute;
-    top: 55;
-    left: 50%;
-    transform: translate(-50%);
-    height:90pt;}
-
-@media screen and (max-width: 1680px) {
-    #img_login {
-    height: 90pt;}
-    }
-
-
-@media screen and (max-width: 768px) {
-    #img_login {
-    top: 10;
-    height: 100pt;}
-    }
-
-@media screen and (max-width: 380px) {
-    #img_login {
-    top: -25;
-    height: 100pt;}
-    }
-
-.button_login {
-    text-align: center;
-}
-
-.reset_senha_login {
-    text-align: center;
-}
-
-/*****testes*******/
-.teste{
-    margin: 0;
-    padding: 0;
-    padding-right: 30px;
-    background-color: blue;
-    text-align: right;
-}
 
 
 /* Basic */
@@ -160,7 +93,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
+  color: #999999ff;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -181,16 +114,16 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #00aa00ff;
+  color: #ffdd00ff;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #00aa00ff;
-    color: #00aa00ff !important; }
+    border-bottom-color: #ffdd00ff;
+    color: #ffdd00ff !important; }
     a:hover strong {
       color: inherit; }
 
 strong, b {
-  color: #00aa00ff;
+  color: #ffdd00ff;
   font-weight: 600; }
 
 em, i {
@@ -1067,7 +1000,7 @@ header p {
   text-transform: uppercase; }
 
 header.major > :last-child {
-  border-bottom: solid 3px #00aa00ff;
+  border-bottom: solid 3px #ffdd00ff;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
@@ -1125,8 +1058,8 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #00aa00ff;
-    box-shadow: 0 0 0 1px #00aa00ff; }
+    border-color: #ffdd00ff;
+    box-shadow: 0 0 0 1px #ffdd00ff; }
 
 select {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
@@ -1137,7 +1070,7 @@ select {
   padding-right: 2.75em;
   text-overflow: ellipsis; }
   select option {
-    color: #3d4449ff;
+    color: #3d4449;
     background: #ffffff; }
   select:focus::-ms-value {
     background-color: transparent; }
@@ -1171,7 +1104,7 @@ input[type="radio"] {
   input[type="checkbox"] + label,
   input[type="radio"] + label {
     text-decoration: none;
-    color: #00aa00ff;
+    color: #ffdd00ff;
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
@@ -1214,8 +1147,8 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #00aa00ff;
-    box-shadow: 0 0 0 1px #00aa00ff; }
+    border-color: #ffdd00ff;
+    box-shadow: 0 0 0 1px #ffdd00ff; }
 
 input[type="checkbox"] + label:before {
   border-radius: 0.375em; }
@@ -1445,7 +1378,7 @@ ul.contact {
       font-family: 'Font Awesome 5 Free';
       font-weight: 400; }
     ul.contact li:before {
-      color: #00aa00ff;
+      color: #ffdd00ff;
       display: inline-block;
       font-size: 1.5em;
       height: 1.125em;
@@ -1490,10 +1423,10 @@ ul.pagination {
       padding: 0 0.5em;
       text-align: center; }
       ul.pagination li > .page.active {
-        background-color: #00aa00ff;
+        background-color: #ffdd00ff;
         color: #ffffff !important; }
         ul.pagination li > .page.active:hover {
-          background-color: #eff1f2ff; }
+          background-color: #f67878; }
         ul.pagination li > .page.active:active {
           background-color: #f45c5c; }
     ul.pagination li:first-child {
@@ -1518,7 +1451,7 @@ table {
     border: solid 1px rgba(210, 215, 217, 0.75);
     border-left: 0;
     border-right: 0; }
-    table tbody {
+    table tbody tr:nth-child(2n + 1) {
       background-color: rgba(230, 235, 237, 0.25); }
   table td {
     padding: 0.75em 0.75em; }
@@ -1564,8 +1497,8 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #00aa00ff;
-  color: #00aa00ff !important;
+  box-shadow: inset 0 0 0 2px #ffdd00ff;
+  color: #ffdd00ff !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1584,13 +1517,13 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(0, 170, 0, 0.05); }
+    background-color: rgba(245, 106, 106, 0.05); }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: rgba(0, 170, 2, 0.15); }
+    background-color: rgba(245, 106, 106, 0.15); }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
@@ -1622,7 +1555,7 @@ button,
   input[type="button"].primary,
   button.primary,
   .button.primary {
-    background-color: #00aa00ff;
+    background-color: #ffdd00ff;
     box-shadow: none;
     color: #ffffff !important; }
     input[type="submit"].primary:hover,
@@ -1630,7 +1563,7 @@ button,
     input[type="button"].primary:hover,
     button.primary:hover,
     .button.primary:hover {
-      background-color: #eff1f2ff; }
+      background-color: #f67878; }
     input[type="submit"].primary:active,
     input[type="reset"].primary:active,
     input[type="button"].primary:active,
@@ -1711,7 +1644,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: #00aa00ff;
+        color: #ffdd00ff;
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -1969,7 +1902,7 @@ button,
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
-    color: #00aa00ff;
+    color: #ffdd00ff;
     content: '\f002';
     cursor: default;
     display: block;
@@ -2124,7 +2057,7 @@ button,
       text-indent: 7.25em;
       width: 7.25em; }
       #sidebar .toggle:before {
-        color: #00aa00ff;
+        color: #ffdd00ff;
         margin-left: -0.0625em;
         margin-top: -0.25em;
         font-size: 1.1rem;
@@ -2145,7 +2078,7 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #00aa00ff;
+  border-bottom: solid 5px #ffdd00ff;
   padding: 2em 0 1em 0;
   position: relative; }
   #header > * {
@@ -2290,7 +2223,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #00aa00ff; }
+      color: #ffdd00ff; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
@@ -2320,7 +2253,7 @@ button,
         position: absolute;
         right: 0; }
       #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
-        color: #00aa00ff; }
+        color: #ffdd00ff; }
       #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
         display: block; }
       #menu ul a.opener.active:before, #menu ul span.opener.active:before {
@@ -2349,34 +2282,20 @@ button,
     padding-top: 0; }
 
 
-
 h3 {
 text-align: center;
-color: #b3b3b8ff;
 font-size: 20pt;
 }
 
-h5 {
-text-align: right;
-color: #b3b3b8ff;
+h4 {
+text-align: justify;
 font-size: 12pt;
 }
 
-h6 {
+h5 {
 text-align: left;
-font-size: 15pt;
-}
-
-h7 {
-text-align: left;
-color: #3d4449ff;
-font-size: 13pt;
-}
-
-h4 {
-text-align: center;
 color: #b3b3b8ff;
-font-size: 13pt;
+font-size: 12pt;
 }
 
 img{

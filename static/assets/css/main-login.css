@@ -1,0 +1,10 @@
+.caixa_login {
+    width: 320px;
+    height: 420px;
+    border: 2px solid;
+    border-radius: 20px 0px 20px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}

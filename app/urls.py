@@ -26,5 +26,7 @@ urlpatterns = [
     path('logout/', LogoutView, name='logout'),
     path('jccontabilidade/', include('jc_contabilidade.urls')),
     path('lgdistribuidora/', include('lg_distribuidora.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
+
     #path('supermercadoficticio/', include('supermercado_ficticio.urls')),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

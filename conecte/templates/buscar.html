@@ -20,6 +20,7 @@
 											<img id="logomarca" src='{% static "images/logomarca/home.png" %}' alt="" />
 									</div>
 								</header>
+
 									<!-- TÍTULO -->
 									<div class="features">
 										<article>
@@ -29,6 +30,7 @@
 												Economize e valorize as empresas do seu bairro!
 											</div>
 										</article>
+
 									</div>
 
 									<!-- TABELA DE RESULTADOS DA BUSCA -->
@@ -94,7 +96,7 @@
 									<ul>
 										<li><a href="../..">Home</a></li>
 										<li><a href="/home/empresas">Guia Comercial</a></li>
-										<li><a href="/admin">Administração</a></li>
+										<li><a href="{% url 'login'%}?next={{request.path}}">Administração</a></li>
 										<li><a href="#">Sobre nós</a></li>
 
 									</ul>

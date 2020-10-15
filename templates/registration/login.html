@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+	<head>
+		<title>conecte.online</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href='{% static "assets/css/main-home.css" %}'/>
+	</head>
+	<body>
+      <div class="tela_login">
+
+        <div class="caixa_login">
+
+                  <img id="img_login" src='{% static "images/logomarca/login.png" %}' alt="" />
+
+           <form method="post" action="{% url 'login' %}">
+                      {% csrf_token %}
+                      <br><br><br><br><br><br>
+                <h4>Administração</h4><br>
+
+                          Login: {{ form.username }}
+                      <br>
+                         Senha: {{ form.password }}
+                      <br>
+                 <div class="button_login">
+                      <input type="submit" value="login" />
+                      <input type="hidden" name="next" value="{{ next }}" />
+                 </div>
+           </form>
+
+                  <div class="reset_senha_login">
+                      <br>
+                      <a href="{% url 'password_reset' %}">Esqueceu a senha?</a><br><br>
+                      <a href="/">Voltar à página principal</a>
+                  </div>
+
+
+            </form>
+        </div>
+      </div>
+
+
+
+    </body>
+
+</html>
