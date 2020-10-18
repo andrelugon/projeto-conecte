@@ -119,14 +119,7 @@ input, select, textarea {
     text-align: center;
 }
 
-/*****testes*******/
-.teste{
-    margin: 0;
-    padding: 0;
-    padding-right: 30px;
-    background-color: blue;
-    text-align: right;
-}
+
 
 
 /* Basic */
@@ -216,7 +209,7 @@ h1 {
   line-height: 1.3; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.35em; }
 
 h3 {
   font-size: 1.25em; }
@@ -243,7 +236,7 @@ h6 {
     font-size: 2em;
     line-height: 1.4; }
   h2 {
-    font-size: 1.35em; } }
+    font-size: 1.25em; } }
 
 sub {
   font-size: 0.8em;
