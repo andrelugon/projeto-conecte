@@ -19,14 +19,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth.views import LoginView, LogoutView
 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('conecte.urls')),
-    path('login/', LoginView, name='login'),
-    path('logout/', LogoutView, name='logout'),
+    #path('login/', LoginView, name='login'),
+    #path('logout/', LogoutView, name='logout'),
     path('jccontabilidade/', include('jc_contabilidade.urls')),
     path('lgdistribuidora/', include('lg_distribuidora.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 
-    #path('supermercadoficticio/', include('supermercado_ficticio.urls')),
+
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

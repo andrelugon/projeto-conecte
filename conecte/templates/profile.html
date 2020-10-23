@@ -1,0 +1,77 @@
+{% load static %}
+
+
+<html>
+	<head>
+		<title>conecte.online</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href='{% static "assets/css/main-home.css" %}'/>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+								<header id="header">
+									<!--Logomarca -->
+									<div class="topo">
+											<img id="logomarca" src='{% static "images/logomarca/home.png" %}' alt="" />
+									</div>
+
+								</header>
+
+
+									<!-- TÍTULO -->
+										<article>
+											<div class="content">
+												<br>
+												<br>
+												<h1>ADMINISTRAÇÃO</h1>
+													<header class="major">
+														<h2>Perfil: {{  user  }}</b></h2>
+													</header>
+
+
+												<p>
+													Esta é a área administrativa da página web da sua empresa!<br>
+													Recomendamos que não compartilhe sua senha de acesso com outras pessoas.
+												</p>
+
+												<p>
+													Neste espaço é possível acessar todos os dados informados durante o cadastro!<br>
+													É possível também, editar estas as informações e fazer upload de imagens de serviços, de produtos e ofertas.
+												</p>
+												<p>
+													Informamos ainda, que todas as informações aqui prestadas são de responsabilidade
+													do proprietário deste perfil.
+												</p>
+
+												<p>
+													<b>
+														&nbsp;<a href="/admin">ACESSAR</a>&nbsp;&nbsp;&nbsp;&nbsp;
+														<a href="/accounts/logout">SAIR</a>
+													</b>
+												</p>
+
+											</div>
+
+										</article>
+									</div>
+
+						</div>
+					</div>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src='{% static "assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "assets/js/browser.min.js" %}'></script>
+			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "assets/js/util.js" %}'></script>
+			<script src='{% static "assets/js/main.js" %}'></script>
+
+	</body>

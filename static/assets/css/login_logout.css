@@ -78,7 +78,7 @@ input, select, textarea {
     top:60%}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .caixa_login{
     width: 390px;
     height: 760px;
@@ -204,18 +204,20 @@ h1, h2, h3, h4, h5, h6, h8 {
     border-bottom: 0; }
 
 h1 {
+   text-align: center;
   font-size: 3.5em;
   margin: 0 0 0.5em 0;
   line-height: 1.3; }
 
 h2 {
-  font-size: 1.35em; }
+    text-align: center;
+        font-size: 1.35em; }
 
 h3 {
   font-size: 1.25em; }
 
 h4 {
-  font-size: 1.1em; }
+  font-size: 1.4em; }
 
 h5 {
   font-size: 0.9em; }
@@ -1054,8 +1056,9 @@ section.special, article.special {
   text-align: center; }
 
 header p {
-  font-family: "Roboto Slab", serif;
-  font-size: 1em;
+text-align: center;
+
+  font-size: 1.3em;
   font-weight: 400;
   letter-spacing: 0.075em;
   margin-top: -0.5em;
@@ -2347,8 +2350,7 @@ button,
 
 h3 {
 text-align: center;
-color: #b3b3b8ff;
-font-size: 20pt;
+
 }
 
 h5 {
@@ -2367,7 +2369,6 @@ font-size: 13pt;
 h4 {
 text-align: center;
 color: #b3b3b8ff;
-font-size: 13pt;
 }
 
 img{

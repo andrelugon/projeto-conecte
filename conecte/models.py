@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 class cliente(models.Model):
         nome_fantasia = models.CharField(max_length=100)
@@ -24,6 +26,7 @@ class cliente(models.Model):
         estado = models.CharField(max_length=50, null=True, blank=True, choices=federações)
         cnpj = models.CharField(max_length=11)
         horario_de_atendimento = models.CharField(max_length=20)
+        user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
         nome_do_proprietário = models.CharField(max_length=100)
         sobrenome = models.CharField(max_length=100)
         email = models.EmailField()
@@ -39,7 +42,6 @@ class cliente(models.Model):
         observações = models.CharField(max_length=100, null=True, blank=True)
 
 
+
         def __str__(self):
-            return self.nome_fantasia
-
-
+            return str(self.nome_fantasia)

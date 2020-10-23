@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class LgDistribuidoraConfig(AppConfig):
+class JcContabilidadeConfig(AppConfig):
     name = 'lg_distribuidora'

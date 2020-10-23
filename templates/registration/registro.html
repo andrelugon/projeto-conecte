@@ -1,0 +1,93 @@
+{% load static %}
+
+
+<html>
+	<head>
+		<title>conecte.online</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href='{% static "assets/css/main-home.css" %}'/>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+								<header id="header">
+									<!--Logomarca -->
+									<div class="topo">
+											<img id="logomarca" src='{% static "images/logomarca/home.png" %}' alt="" />
+									</div>
+
+								</header>
+
+								<div class="redes-sociais">
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</div>
+									<!-- TÍTULO -->
+										<article>
+											<div class="content">
+
+													<h1>CONECTE.ONLINE</h1>
+
+													<h2>As melhores ofertas bem perto de você!</h2>
+											</div>
+							<hr>
+
+										<article>
+											<div class="content">
+
+													<h2>Como cadastrar a minha empresa?</h2>
+
+													<p>A solução conecte.online tem o objetivo de oferecer uma página na internet para pequenas empresas.
+														Conheça nossos serviços e obtenha um espaço exclusivo para anunciar serviços, produtos e ofertas!
+												</p>
+												<b><a href="/admin">Clique aqui e saiba mais!</a></b>
+											</div>
+										</article>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="../..">Home</a></li>
+										<li><a href="/home/empresas">Guia Comercial</a></li>
+										<li><a href="{% url 'login'%}?next={{request.path}}">Administração</a></li>
+										<li><a href="#">Sobre nós</a></li>
+
+									</ul>
+								</nav>
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src='{% static "assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "assets/js/browser.min.js" %}'></script>
+			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "assets/js/util.js" %}'></script>
+			<script src='{% static "assets/js/main.js" %}'></script>
+
+	</body>

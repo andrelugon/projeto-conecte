@@ -1,14 +1,78 @@
 {% load static %}
+
+
 <html>
 	<head>
 		<title>conecte.online</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href='{% static "assets/css/main-home.css" %}'/>
+		<link rel="stylesheet" href='{% static "assets/css/login_logout.css" %}'/>
 	</head>
-    {% block content %}
-  <p>Logged out!</p>  
-  <a href="{% url 'login'%}">Click here to login again.</a>
-{% endblock %}
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+								<header id="header">
+									<!--Logomarca -->
+									<div class="topo">
+											<img id="logomarca" src='{% static "images/logomarca/home.png" %}' alt="" />
+									</div>
 
-</html>
+								</header>
+
+
+									<!-- TÍTULO -->
+										<article>
+											<div class="content">
+												<div class="centraliza">
+													<br>
+													<br>
+													<br>
+													<br>
+													<br>
+													<br>
+													<h1>Agradecemos sua visita!</h1>
+													<h3>
+														Mantenha suas informações atualizadas!
+													</h3>
+													<br>
+													<br>
+													<br>
+													<br>
+													<br>
+													<h3>
+														<b>
+															<a href="/">Voltar para página principal</a>
+														</b>
+													</h3>
+												</div>
+											</div>
+
+										</article>
+									</div>
+
+						</div>
+					</div>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src='{% static "assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "assets/js/browser.min.js" %}'></script>
+			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "assets/js/util.js" %}'></script>
+			<script src='{% static "assets/js/main.js" %}'></script>
+
+	</body>
+
+
+
+
+
+
+
+

@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'conecte',
     'jc_contabilidade',
     'lg_distribuidora',
-   # 'supermercado_ficticio',
+
 
 ]
 
@@ -139,6 +139,3 @@ MEDIA_URL = '/media/'
 
 LOGIN_URL = '/login/'
 
-LOGIN_REDIRECT_URL = '/'
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

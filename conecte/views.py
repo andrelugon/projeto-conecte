@@ -3,6 +3,9 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from .models import cliente
 from .forms import clienteForm
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
+
 
 def home_conecte(request):
     return render(request, 'home.html')
@@ -10,13 +13,17 @@ def home_conecte(request):
 def empresas(request):
     return render(request, 'empresas.html')
 
-
 def controle(request):
     clientes = cliente.objects.all()
     return render(request, 'controle.html', {'cliente': clientes})
 
 def cadastro(request):
     return render(request, 'cadastro.html')
+
+
+@login_required
+def profile(request):
+    return render(request, 'profile.html')
 
 def novo_cliente(request):
     form = clienteForm(request.POST or None, request.FILES or None)
@@ -59,7 +66,7 @@ def buscar(request):
         return render(request, 'buscar.html', {'list': list})
     return render(request, 'buscar.html')
 
-def espaço(value):
-    return value.replace(' ', '')
+
+
 
 
