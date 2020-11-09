@@ -93,7 +93,7 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #999999ff;
+  color: #7f888f;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
   font-weight: 400;
@@ -114,16 +114,16 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #999999ff;
+  color: #00aa00ff;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #999999ff;
-    color: #999999ff !important; }
+    border-bottom-color: #00aa00ff;
+    color: #00aa00ff !important; }
     a:hover strong {
       color: inherit; }
 
 strong, b {
-  color: #999999ff;
+  color: #00aa00ff;
   font-weight: 600; }
 
 em, i {
@@ -1000,7 +1000,7 @@ header p {
   text-transform: uppercase; }
 
 header.major > :last-child {
-  border-bottom: solid 3px #999999ff;
+  border-bottom: solid 3px #00aa00ff;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
@@ -1058,8 +1058,8 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #999999ff;
-    box-shadow: 0 0 0 1px #999999ff; }
+    border-color: #00aa00ff;
+    box-shadow: 0 0 0 1px #00aa00ff; }
 
 select {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
@@ -1104,7 +1104,7 @@ input[type="radio"] {
   input[type="checkbox"] + label,
   input[type="radio"] + label {
     text-decoration: none;
-    color: #999999ff;
+    color: #7f888f;
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
@@ -1147,8 +1147,8 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #999999ff;
-    box-shadow: 0 0 0 1px #999999ff; }
+    border-color: #00aa00ff;
+    box-shadow: 0 0 0 1px #00aa00ff; }
 
 input[type="checkbox"] + label:before {
   border-radius: 0.375em; }
@@ -1378,7 +1378,7 @@ ul.contact {
       font-family: 'Font Awesome 5 Free';
       font-weight: 400; }
     ul.contact li:before {
-      color: #999999ff;
+      color: #00aa00ff;
       display: inline-block;
       font-size: 1.5em;
       height: 1.125em;
@@ -1423,7 +1423,7 @@ ul.pagination {
       padding: 0 0.5em;
       text-align: center; }
       ul.pagination li > .page.active {
-        background-color: #999999ff;
+        background-color: #00aa00ff;
         color: #ffffff !important; }
         ul.pagination li > .page.active:hover {
           background-color: #f67878; }
@@ -1497,8 +1497,8 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #999999ff;
-  color: #999999ff !important;
+  box-shadow: inset 0 0 0 2px #00aa00ff;
+  color: #00aa00ff !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -1555,7 +1555,7 @@ button,
   input[type="button"].primary,
   button.primary,
   .button.primary {
-    background-color: #999999ff;
+    background-color: #00aa00ff;
     box-shadow: none;
     color: #ffffff !important; }
     input[type="submit"].primary:hover,
@@ -1644,7 +1644,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: #999999ff;
+        color: #00aa00ff;
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -1902,7 +1902,7 @@ button,
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
-    color: #999999ff;
+    color: #7f888f;
     content: '\f002';
     cursor: default;
     display: block;
@@ -2057,7 +2057,7 @@ button,
       text-indent: 7.25em;
       width: 7.25em; }
       #sidebar .toggle:before {
-        color: #999999ff;
+        color: #7f888f;
         margin-left: -0.0625em;
         margin-top: -0.25em;
         font-size: 1.1rem;
@@ -2078,7 +2078,7 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #999999ff;
+  border-bottom: solid 5px #00aa00ff;
   padding: 2em 0 1em 0;
   position: relative; }
   #header > * {
@@ -2223,7 +2223,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #999999ff; }
+      color: #00aa00ff; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
@@ -2253,7 +2253,7 @@ button,
         position: absolute;
         right: 0; }
       #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
-        color: #999999ff; }
+        color: #00aa00ff; }
       #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
         display: block; }
       #menu ul a.opener.active:before, #menu ul span.opener.active:before {
@@ -2299,11 +2299,9 @@ font-size: 12pt;
 }
 
 img{
-max-width: 100%
-width: 180pt;
-height: 260pt;
-object-fit: cover;
-object-position: center center;
+max-width: 50%
+width: 100%;
+
 }
 .topo{
 position: relative;
@@ -2329,4 +2327,3 @@ position: relative;
         height:55pt;
         bottom: 0px;
         right: 0px;}}
-
