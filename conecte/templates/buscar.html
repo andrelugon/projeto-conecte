@@ -35,7 +35,7 @@
 
 													<h1>CONECTE.ONLINE</h1>
 
-													<h2>As melhores ofertas bem perto de você!</h2>
+													<h2>As melhores ofertas perto de você!</h2>
 											</div>
 										</article>
 
@@ -63,6 +63,9 @@
 												</tbody>
 										{% endfor %}
 									</table>
+										{% for value in list|slice:":1" %}
+											<h3><a href="../">Limpar</a></h3>
+										{% endfor %}
 
 									<!-- REALIZAR UMA NOVA BUSCA -->
 										{% for value in list|slice:":1" %}
