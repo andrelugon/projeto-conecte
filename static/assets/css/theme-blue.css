@@ -151,7 +151,9 @@ h3 {
   font-size: 1.35em;
   background-color: #0044aaff;
   color: #ffffff;
-  text-align: center;}
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
 
 h4 {
   font-size: 0.9em;
