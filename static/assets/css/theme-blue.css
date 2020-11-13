@@ -1599,7 +1599,8 @@ button,
     padding-top: 0; }
 
 /* Features */
-.features {
+
+.features{
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -1644,7 +1645,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: ##0044aaff;
+        color: #0044aaff;
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -1675,6 +1676,8 @@ button,
       width: 100%; }
       .features article .content > :last-child {
         margin-bottom: 0; }
+    .features a{
+        border: none;}
   @media screen and (max-width: 980px) {
     .features {
       margin: 0 0 2em 0;
@@ -1691,39 +1694,15 @@ button,
         .features article:last-child {
           margin-bottom: 0; }
         .features article .icon {
-          height: 8em;
+          height: 9.2em;
           line-height: 8em;
           width: 8em; }
           .features article .icon:before {
-            font-size: 2.25rem; }
+            font-size: 2rem; }
           .features article .icon:after {
-            height: 6em;
-            margin: -3em 0 0 -3em;
-            width: 6em; } }
-  @media screen and (max-width: 480px) {
-    .features article {
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -moz-align-items: -moz-flex-start;
-      -webkit-align-items: -webkit-flex-start;
-      -ms-align-items: -ms-flex-start;
-      align-items: flex-start; }
-      .features article .icon {
-        height: 6em;
-        line-height: 6em;
-        margin: 0 0 1.5em 0;
-        width: 6em; }
-        .features article .icon:before {
-          font-size: 1.5rem; }
-        .features article .icon:after {
-          height: 4em;
-          margin: -2em 0 0 -2em;
-          width: 4em; } }
-  @media screen and (max-width: 480px) {
-    .features article .icon:before {
-      font-size: 1.25rem; } }
+            height: 5em;
+            margin: -3em 0 0 -2.5em;
+            width: 5em; } }
 
 /* Posts */
 .posts {

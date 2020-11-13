@@ -54,166 +54,48 @@
 									</div>
 								</section>
 
-							<!-- Ofertas cadastradas -->
+							<!-- Anunciantes de produtos -->
 							{% for item in dados_gerais %}
 								{% if item.tenho_interesse_em_anunciar == 'Produtos' %}
 
-									<section>
-										<header class="major">
-											<h2>Confira nossas ofertas</h2>
-										</header>
-										<br>
+									<div class="features">
+										<article>
+											<a href="#"><span class="icon solid fa-shopping-cart"></span></a>
+											<div class="content">
+												<h2>Acesse nossas ofertas</h2>
+												<p>Conheça a solução Conecte!<br>
+													E saiba como disponibilizar	a sua marca na web! <a href="/home/cadastro">Clique aqui!</a>
+												</p>
+											</div>
 
-										<div class="posts">
-											{% for anuncio_produto in anuncio_produtos %}
-												{% if anuncio_produto.id != 0 %}
-													<article>
-														<div class="post_clientes" >
+										</article>
+										<article>
+											<a href="#"><span class="icon solid fa-bullhorn"></span></a>
+											<div class="content">
+												<h2>Anuncie aqui!</h2>
+												<p>Quanto mais empresas anunciam,<br>
+													mais serviços e produtos estarão disponíveis para consulta!</p>
+											</div>
+										</article>
+									</div>
 
-														<h3>{{ anuncio_produto.nome_do_produto }}</h3>
-														<!-- Imagem do produto -->
-														<div class="container">
-															<div class="row">
-																<div class="col-12">
-																	<a class="image">
-																		<img src= '{{ anuncio_produto.imagem_do_produto.url }}'>
-																	</a>
-																</div>
-															</div>
-														</div>
 
-														<!-- Preço do produto -->
-														<h3>R$ {{ anuncio_produto.preço }}</h3>
-
-														<!-- Informações sobre o produto -->
-														<h4>{{ anuncio_produto.Informações_sobre_o_produto }}</h4>
-
-														<!-- Validade da oferta -->
-														<!--<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_produto }}</h5>-->
-														</div>
-													</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
 								{% endif %}
 							{% endfor %}
 
 
-
-
-
-
-
-							<!-- Nossos serviços -->
+							<!-- Anunciantes de serviços -->
 							{% for item in dados_gerais %}
 								{% if item.tenho_interesse_em_anunciar == 'Serviços' %}
 
-									<section>
-										<header class="major">
-											<h2>Nossos serviços</h2>
-										</header>
-										<br>
-										<div class="posts">
-											{% for anuncio_serviço in anuncio_serviços %}
-												{% if anuncio_serviço.id != 0 %}
-												<article>
-													<h3>{{ anuncio_serviço.nome_do_serviço }}</h3>
-													<!-- Imagem do produto -->
-													<div class="container">
-														<div class="row">
-															<div class="col-12">
-																<a class="image">
-																	<img src= '{{ anuncio_serviço.imagem_do_serviço.url }}'>
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<!-- Informações sobre o produto -->
-													<h4>{{ anuncio_serviço.Informações_sobre_o_serviço }}</h4>
-
-													<!-- Validade da oferta -->
-													<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_serviço }}</h5>
-												</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
 								{% endif %}
 							{% endfor %}
 
+							<!-- Anunciantes de produtos e serviços -->
+
 							{% for item in dados_gerais %}
 								{% if item.tenho_interesse_em_anunciar == 'Produtos e serviços' %}
-									<section>
-										<header class="major">
-											<h2>Confira nossas ofertas</h2>
-										</header>
-										<br>
 
-										<div class="posts">
-											{% for anuncio_produto in anuncio_produtos %}
-												{% if anuncio_produto.id != 0 %}
-													<article>
-														<div class="post_clientes" >
-
-														<h3>{{ anuncio_produto.nome_do_produto }}</h3>
-														<!-- Imagem do produto -->
-														<div class="container">
-															<div class="row">
-																<div class="col-12">
-																	<a class="image">
-																		<img src= '{{ anuncio_produto.imagem_do_produto.url }}'>
-																	</a>
-																</div>
-															</div>
-														</div>
-
-														<!-- Preço do produto -->
-														<h3>R$ {{ anuncio_produto.preço }}</h3>
-
-														<!-- Informações sobre o produto -->
-														<h4>{{ anuncio_produto.Informações_sobre_o_produto }}</h4>
-
-														<!-- Validade da oferta -->
-														<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_produto }}</h5>
-														</div>
-													</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
-									<section>
-										<header class="major">
-											<h2>Nossos serviços</h2>
-										</header>
-										<br>
-										<div class="posts">
-											{% for anuncio_serviço in anuncio_serviços %}
-												{% if anuncio_serviço.id != 0 %}
-												<article>
-													<h3>{{ anuncio_serviço.nome_do_serviço }}</h3>
-													<!-- Imagem do produto -->
-													<div class="container">
-														<div class="row">
-															<div class="col-12">
-																<a class="image">
-																	<img src= '{{ anuncio_serviço.imagem_do_serviço.url }}'>
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<!-- Informações sobre o produto -->
-													<h4>{{ anuncio_serviço.Informações_sobre_o_serviço }}</h4>
-
-													<!-- Validade da oferta -->
-													<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_serviço }}</h5>
-												</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
 								{% endif %}
 							{% endfor %}
 
