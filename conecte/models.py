@@ -39,6 +39,7 @@ class cliente(models.Model):
         )
         tenho_interesse_em_anunciar = models.CharField(max_length=50, null=True, blank=True, choices=anunciar)
         breve_descrição_da_empresa = models.TextField()
+        palavras_chave = models.CharField(max_length=100, null=True, blank=True)
         observações = models.CharField(max_length=100, null=True, blank=True)
 
 

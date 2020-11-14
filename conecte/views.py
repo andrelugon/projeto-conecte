@@ -60,8 +60,9 @@ def buscar(request):
         busca == 'search'
         if busca:
             list = cliente.objects.filter(atividade__icontains=busca) or \
-                   cliente.objects.filter(nome_fantasia__icontains=busca ) or \
-                   cliente.objects.filter(bairro__icontains=busca)
+                   cliente.objects.filter(nome_fantasia__icontains=busca) or \
+                   cliente.objects.filter(bairro__icontains=busca) or \
+                   cliente.objects.filter(palavras_chave__icontains=busca)
 
         return render(request, 'buscar.html', {'list': list})
     return render(request, 'buscar.html')

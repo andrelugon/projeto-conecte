@@ -19,8 +19,8 @@ class clienteForm(ModelForm):
                   'celular_whatsapp',
                   'breve_descrição_da_empresa',
                   'tenho_interesse_em_anunciar',
+                  'palavras_chave',
                   'observações',
                   'logomarca',
-
                   ]
 
