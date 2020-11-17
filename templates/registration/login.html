@@ -1,7 +1,7 @@
 {% load static %}
 <html>
 	<head>
-		<title>conecte.online</title>
+		<title>Administração</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href='{% static "assets/css/login_logout.css" %}'/>
@@ -16,7 +16,7 @@
            <form method="post" action="{% url 'login' %}">
                       {% csrf_token %}
                       <br><br><br><br><br><br>
-                <h4>Administração</h4><br>
+
 
                           Login:<br><br>{{ form.username }}
                       <br>

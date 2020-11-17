@@ -65,7 +65,7 @@ input, select, textarea {
 
 .caixa_login {
     border: none;
-    width: 390px;
+    width: 590px;
     height: 580px;
     position: absolute;
     top: 46%;
@@ -74,43 +74,41 @@ input, select, textarea {
     padding: 40px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 760px) {
     .caixa_login{
+    width: 390px;
+    height: 580px;
     top:60%}
     }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1680px) {
     .caixa_login{
     top:50%;
-    width: 360px;
-    height: 680px;
-    background-color: #fdfdfdff;
-    box-shadow:  0 0 0.3em black;
+    width: 750px;
+    height: 720px;
+    border-radius: 9px;
+    background-color: #f9f9f9;
+    box-shadow:  0 0 0.9em #333333;
     }
 }
 
 #img_login {
     position: absolute;
-    top: 55;
+    top: 35;
     left: 50%;
     transform: translate(-50%);
-    height:90pt;}
+    height:110pt;}
 
 @media screen and (max-width: 1680px) {
     #img_login {
-    height: 90pt;}
-    }
-
-
-@media screen and (max-width: 768px) {
-    #img_login {
     top: -25;
-    height: 100pt;}
+    height: 100pt;
+}
     }
 
 @media screen and (max-width: 380px) {
     #img_login {
-    top: -25;
+    top: 10;
     height: 80pt;}
     }
 
