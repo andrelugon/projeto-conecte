@@ -1,5 +1,5 @@
 from django.db import models
-
+from django import forms
 
 
 class dado(models.Model):
@@ -63,8 +63,8 @@ class produto(models.Model):
 class serviço(models.Model):
     nome_do_serviço = models.CharField(max_length=30)
     imagem_do_serviço = models.ImageField(upload_to='serviços', null=True, blank=True)
-    Informações_sobre_o_serviço = models.TextField(max_length=50)
-    preço = models.FloatField(null=True, blank=True)
+    Informações_sobre_o_serviço = models.TextField(max_length=200)
+    preço = models.FloatField( null=True, blank=True)
 
     def __str__(self):
         return self.nome_do_serviço

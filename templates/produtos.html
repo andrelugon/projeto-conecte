@@ -1,9 +1,9 @@
 {% load static %}
 
+
 <html>
 	<head>
-
-<!--Título: nome fantasia cadastrado -->
+<!------------------------------------------Título: nome fantasia cadastrado ------------------------------------------>
 		<title>
 			 {% for item in dados_gerais %}
 						{{ item.nome_fantasia }}
@@ -16,54 +16,29 @@
 
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-
-							<!-- Header -->
 								<header id="header" >
-
-									<!--Logomarca -->
 									<div class="topo">
+<!------------------------------------------------------ Logomarca ---------------------------------------------------->
 										{% for item in dados_gerais %}
 											<img id="logomarca" src='{{ item.logomarca.url }}' float="left">
 										{% endfor %}
 									</div>
 								</header>
 
-							<!-- Banner -->
-								<section id="banner">
 									<div class="content">
-										<header>
 											<h1>
 												{% for item in dados_gerais %}
 													<h1>{{ item.nome_fantasia }}</h1>
 												{% endfor %}
 											</h1>
-
-
-										</header>
-
-											{% for item in dados_gerais %}
-													<p>{{ item.breve_descrição_da_empresa }}</p>
-											{% endfor %}
 									</div>
-								</section>
 
-							<!-- Ofertas cadastradas -->
+<!--------------------------------------------------- Nossos produtos ------------------------------------------------->
 							{% for item in dados_gerais %}
-								{% if item.tenho_interesse_em_anunciar == 'Produtos' %}
-
-									<section>
-										<header class="major">
-											<h2>Confira nossas ofertas</h2>
-										</header>
 										<br>
-
 										<div class="posts">
 											{% for anuncio_produto in anuncio_produtos %}
 												{% if anuncio_produto.id != 0 %}
@@ -96,7 +71,7 @@
 											{% endfor %}
 										</div>
 									</section>
-								{% endif %}
+
 							{% endfor %}
 
 

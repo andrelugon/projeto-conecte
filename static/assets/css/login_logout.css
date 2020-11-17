@@ -80,9 +80,10 @@ input, select, textarea {
 
 @media screen and (min-width: 1024px) {
     .caixa_login{
-    width: 390px;
+    width: 600px;
     height: 760px;
-    box-shadow: 0.5px 1px 15px #999999;
+    border-top: 8px solid #00aa00ff;
+    
     }
 }
 

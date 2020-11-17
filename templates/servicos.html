@@ -1,9 +1,9 @@
 {% load static %}
 
+
 <html>
 	<head>
-
-<!--Título: nome fantasia cadastrado -->
+<!------------------------------------------Título: nome fantasia cadastrado ------------------------------------------>
 		<title>
 			 {% for item in dados_gerais %}
 						{{ item.nome_fantasia }}
@@ -16,104 +16,30 @@
 
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-
-							<!-- Header -->
 								<header id="header" >
-
-									<!--Logomarca -->
 									<div class="topo">
+<!------------------------------------------------------ Logomarca ---------------------------------------------------->
 										{% for item in dados_gerais %}
 											<img id="logomarca" src='{{ item.logomarca.url }}' float="left">
 										{% endfor %}
 									</div>
 								</header>
 
-							<!-- Banner -->
-								<section id="banner">
 									<div class="content">
-										<header>
 											<h1>
 												{% for item in dados_gerais %}
 													<h1>{{ item.nome_fantasia }}</h1>
 												{% endfor %}
+												<br>
 											</h1>
-
-
-										</header>
-
-											{% for item in dados_gerais %}
-													<p>{{ item.breve_descrição_da_empresa }}</p>
-											{% endfor %}
 									</div>
-								</section>
 
-							<!-- Ofertas cadastradas -->
+<!--------------------------------------------------- Nossos serviços ------------------------------------------------->
 							{% for item in dados_gerais %}
-								{% if item.tenho_interesse_em_anunciar == 'Produtos' %}
 
-									<section>
-										<header class="major">
-											<h2>Confira nossas ofertas</h2>
-										</header>
-										<br>
-
-										<div class="posts">
-											{% for anuncio_produto in anuncio_produtos %}
-												{% if anuncio_produto.id != 0 %}
-													<article>
-														<div class="post_clientes" >
-
-														<h3>{{ anuncio_produto.nome_do_produto }}</h3>
-														<!-- Imagem do produto -->
-														<div class="container">
-															<div class="row">
-																<div class="col-12">
-																	<a class="image">
-																		<img src= '{{ anuncio_produto.imagem_do_produto.url }}'>
-																	</a>
-																</div>
-															</div>
-														</div>
-
-														<!-- Preço do produto -->
-														<h3>R$ {{ anuncio_produto.preço }}</h3>
-
-														<!-- Informações sobre o produto -->
-														<h4>{{ anuncio_produto.Informações_sobre_o_produto }}</h4>
-
-														<!-- Validade da oferta -->
-														<!--<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_produto }}</h5>-->
-														</div>
-													</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
-								{% endif %}
-							{% endfor %}
-
-
-
-
-
-
-
-							<!-- Nossos serviços -->
-							{% for item in dados_gerais %}
-								{% if item.tenho_interesse_em_anunciar == 'Serviços' %}
-
-									<section>
-										<header class="major">
-											<h2>Nossos serviços</h2>
-										</header>
-										<br>
 										<div class="posts">
 											{% for anuncio_serviço in anuncio_serviços %}
 												{% if anuncio_serviço.id != 0 %}
@@ -129,97 +55,18 @@
 															</div>
 														</div>
 													</div>
-
-													<!-- Informações sobre o produto -->
-													<h4>{{ anuncio_serviço.Informações_sobre_o_serviço }}</h4>
-
-													<!-- Validade da oferta -->
-													<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_serviço }}</h5>
+													<!-- Informações sobre o serviço -->
+													<br>
+													<h5>{{ anuncio_serviço.Informações_sobre_o_serviço }}</h5>
 												</article>
 												{% endif %}
 											{% endfor %}
 										</div>
-									</section>
-								{% endif %}
+							<hr>
 							{% endfor %}
 
-							{% for item in dados_gerais %}
-								{% if item.tenho_interesse_em_anunciar == 'Produtos e serviços' %}
-									<section>
-										<header class="major">
-											<h2>Confira nossas ofertas</h2>
-										</header>
-										<br>
+<!------------------------------------------------------ Contato ------------------------------------------------------>
 
-										<div class="posts">
-											{% for anuncio_produto in anuncio_produtos %}
-												{% if anuncio_produto.id != 0 %}
-													<article>
-														<div class="post_clientes" >
-
-														<h3>{{ anuncio_produto.nome_do_produto }}</h3>
-														<!-- Imagem do produto -->
-														<div class="container">
-															<div class="row">
-																<div class="col-12">
-																	<a class="image">
-																		<img src= '{{ anuncio_produto.imagem_do_produto.url }}'>
-																	</a>
-																</div>
-															</div>
-														</div>
-
-														<!-- Preço do produto -->
-														<h3>R$ {{ anuncio_produto.preço }}</h3>
-
-														<!-- Informações sobre o produto -->
-														<h4>{{ anuncio_produto.Informações_sobre_o_produto }}</h4>
-
-														<!-- Validade da oferta -->
-														<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_produto }}</h5>
-														</div>
-													</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
-									<section>
-										<header class="major">
-											<h2>Nossos serviços</h2>
-										</header>
-										<br>
-										<div class="posts">
-											{% for anuncio_serviço in anuncio_serviços %}
-												{% if anuncio_serviço.id != 0 %}
-												<article>
-													<h3>{{ anuncio_serviço.nome_do_serviço }}</h3>
-													<!-- Imagem do produto -->
-													<div class="container">
-														<div class="row">
-															<div class="col-12">
-																<a class="image">
-																	<img src= '{{ anuncio_serviço.imagem_do_serviço.url }}'>
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<!-- Informações sobre o produto -->
-													<h4>{{ anuncio_serviço.Informações_sobre_o_serviço }}</h4>
-
-													<!-- Validade da oferta -->
-													<h5>* Oferta válida até {{ anuncio_produto.Informações_sobre_o_serviço }}</h5>
-												</article>
-												{% endif %}
-											{% endfor %}
-										</div>
-									</section>
-								{% endif %}
-							{% endfor %}
-
-
-							<!-- Section -->
-								<section>
 									<header class="major">
 										<h2>Contato:</h2>
 									</header>
@@ -230,23 +77,14 @@
 											<li class="icon solid fa-comment">{{ item.celular_whatsapp }}</li>
 											<li class="icon solid fa-clock">Atendimento das {{  item.horario_de_atendimento }}<br />
 											<li class="icon solid fa-map-marker-alt">{{  item.endereço }} {{  item.cidade }}-{{ item.estado }}<br />
-
-
-
 										{%endfor%}
 									</ul>
-								</section>
-
 
 						</div>
-
-
 					</div>
-
 				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
-
 							<!-- Search
 								<section id="search" class="alt">
 									<form method="post" action="#">
@@ -268,23 +106,14 @@
 							<footer id="footer">
 								<p class="copyright">&copy; All rights reserved. GONÇALVES, André Luiz de Jesus.</p>
 							</footer>
-
-
 						</div>
 					</div>
-
 			</div>
-
-
-
-
 		<!-- Scripts -->
 			<script src='{% static "assets/js/jquery.min.js" %}'></script>
 			<script src='{% static "assets/js/browser.min.js" %}'></script>
 			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
 			<script src='{% static "assets/js/util.js" %}'></script>
 			<script src='{% static "assets/js/main.js" %}'></script>
-
-
 	</body>
 </html>
