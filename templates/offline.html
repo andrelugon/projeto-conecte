@@ -1,12 +1,16 @@
+{% load pwa %}
 {% load static %}
 
 
 <html>
 	<head>
+
+		 {% progressive_web_app_meta %}
 		<title>conecte.online</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href='{% static "assets/css/main-home.css" %}'/>
+		<link rel="manifest" href="/manifest.webmanifest">
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -39,55 +43,6 @@
 											</div>
 										</article>
 
-									<!-- TABELA DE RESULTADOS DA BUSCA -->
-									<table class="table table-striped">
-										{% for value in list|slice:":1" %}
-											{% if value.nome_fantasia != '' %}
-												<hr>
-												<h7>Resultado da pesquisa:</h7><br><br>
-												<thead class="thead-dark">
-													<tr>
-														<th scope="col">Empresa</th>
-														<th scope="col">Telefone</th>
-													</tr>
-												</thead>
-											{% endif %}
-										{% endfor %}
-
-										{% for value in list %}
-												<tbody>
-													<tr>
-														<td><a href="/{{value.observações}}">{{value.nome_fantasia}}</a></td>
-														<td>{{value.telefone_fixo}}</td>
-													</tr>
-												</tbody>
-										{% endfor %}
-									</table>
-										{% for value in list|slice:":1" %}
-											<h3><a href="../">Limpar</a></h3>
-										{% endfor %}
-
-									<!-- REALIZAR UMA NOVA BUSCA -->
-										{% for value in list|slice:":1" %}
-											<hr>
-											<h7>Faça uma nova pesquisa:</h7><br><br>
-										{% endfor %}
-									<!-- BARRA DE BUSCA -->
-									<div class="features">
-										<article>
-											<div class="content">
-												<form method=”GET”>
-													<input type="text" class="form-control" placeholder="Pesquise por produtos, serviços ou empresas" name="search" id="search">
-													<br>
-													<div class=”input-group-prepend”>
-														<button class=”btn btn-outline-secondary” type=”submit” id=”button-addon1">Buscar</button>
-													</div>
-												</form>
-											</div>
-										</article>
-									</div>
-
-							<hr>
 
 										<article>
 											<div class="content">

@@ -7,7 +7,7 @@ from .views import (home_conecte,
                     update_cliente,
                     delete_cliente,
                     cadastro,
-                    buscar,
+                    index,
                     )
 
 
@@ -15,7 +15,7 @@ from .views import (home_conecte,
 urlpatterns = [
     #path('', home_conecte),
     #path('login/', loginPage, name='login'),
-    path('', buscar, name="buscar"),
+    path('', index, name="index"),
     path('home/empresas/', empresas),
     path('home/controle/', controle, name='controle' ),
     #path('home/registro/', registro, name='login' ),

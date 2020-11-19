@@ -53,7 +53,7 @@ def delete_cliente(request, id):
 
     return render(request, 'cliente_delete_confirm.html', {'form': form})
 
-def buscar(request):
+def index(request):
     list= cliente.objects.all()
     busca = request.GET.get('search')
     if busca:
@@ -64,9 +64,11 @@ def buscar(request):
                    cliente.objects.filter(bairro__icontains=busca) or \
                    cliente.objects.filter(palavras_chave__icontains=busca)
 
-        return render(request, 'buscar.html', {'list': list})
-    return render(request, 'buscar.html')
+        return render(request, 'index.html', {'list': list})
+    return render(request, 'index.html')
 
+def offline(request):
+    return render(request, 'offline.html')
 
 
 
