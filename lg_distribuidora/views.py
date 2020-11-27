@@ -13,7 +13,7 @@ def home_lgdistribuidora(request):
             'anuncio_serviços': lista_serviços,
     }
 
-    return render(request, 'index_cliente.html', data)
+    return render(request, 'index_lgdistribuidora.html', data)
 
 def produtos(request):
     lista_dados = dado.objects.all()

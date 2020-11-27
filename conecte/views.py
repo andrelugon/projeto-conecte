@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from .models import cliente
 from .forms import clienteForm
+from unicodedata import normalize
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 
@@ -56,6 +57,8 @@ def delete_cliente(request, id):
 def index(request):
     list= cliente.objects.all()
     busca = request.GET.get('search')
+    if not busca is None:
+        busca = busca.strip()
     if busca:
         busca == 'search'
         if busca:
@@ -63,12 +66,13 @@ def index(request):
                    cliente.objects.filter(nome_fantasia__icontains=busca) or \
                    cliente.objects.filter(bairro__icontains=busca) or \
                    cliente.objects.filter(palavras_chave__icontains=busca)
-
         return render(request, 'index.html', {'list': list})
     return render(request, 'index.html')
 
-def offline(request):
-    return render(request, 'offline.html')
+
+
+
+
 
 
 
