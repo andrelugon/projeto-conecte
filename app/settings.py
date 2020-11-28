@@ -146,10 +146,10 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/assets/js', 'servicewor
 
 
 
-PWA_APP_NAME = 'Conecte'
+PWA_APP_NAME = 'As melhores ofertas bem perto de você!'
 PWA_APP_DESCRIPTION = 'conecte.online'
 PWA_APP_THEME_COLOR = '#f9f9f9'
-PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_BACKGROUND_COLOR = '#00aa00ff'
 PWA_APP_DISPLAY = 'standalone'
 PWA_APP_SCOPE = '/'
 PWA_APP_ORIENTATION = 'any'
