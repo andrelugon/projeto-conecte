@@ -129,7 +129,7 @@ em, i {
 p {
   margin: 0 0 2em 0; }
 
-h1, h2, h6 {
+h1, h2 {
   color: #3d4449;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -169,7 +169,10 @@ h5 {
   color: #3d4449;}
 
 h6 {
-  font-size: 0.7em; }
+  font-size: 0.9em;
+  text-align: center;
+  color: #4d4d4d;
+  }
 
 @media screen and (max-width: 1680px) {
   h1 {
@@ -2299,4 +2302,8 @@ position: relative;
         height:55pt;
         bottom: 0px;
         right: 0px;}}
+
+.rodapé{
+    text-align: center;
+    }
 
