@@ -74,42 +74,60 @@ input, select, textarea {
     padding: 40px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1024px) {
     .caixa_login{
     width: 390px;
     height: 580px;
     top:55%}
     }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
     .caixa_login{
     top:50%;
-    width: 750px;
-    height: 720px;
+    width: 450px;
+    height: 690px;
     border-radius: 9px;
-    background-color: #f9f9f9;
-    box-shadow:  0 0 0.9em #333333;
+    background-color: #f9f9f9;}
     }
-}
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    .caixa_login{
+    top:50%;
+    width: 450px;
+    height: 500px;
+    border-radius: 9px;
+    background-color: #f9f9f9;}
+    }
 
 #img_login {
     position: absolute;
     top: 35;
     left: 50%;
     transform: translate(-50%);
-    height:110pt;}
+    height:70pt;}
 
 @media screen and (max-width: 1680px) {
     #img_login {
-    top: -25;
-    height: 100pt;
-}
+    top: 70;
+    height: 70pt;}
+    }
+
+@media screen and (max-width: 1366px) {
+    #img_login {
+    top: 55;
+    height: 50pt;}
+    }
+
+@media screen and (max-width: 768px) {
+    #img_login {
+    top: 10;
+    height: 70pt;}
     }
 
 @media screen and (max-width: 380px) {
     #img_login {
     top: 10;
-    height: 80pt;}
+    height: 70pt;}
     }
 
 .button_login {
@@ -118,6 +136,7 @@ input, select, textarea {
 
 .reset_senha_login {
     text-align: center;
+
 }
 
 
@@ -200,7 +219,8 @@ h1, h2, h3, h5, h6, h8 {
   h1 a, h2 a, h3 a, h5 a, h6 a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 0; }
+    border-bottom: 0;}
+
 
 h1 {
    text-align: center;
