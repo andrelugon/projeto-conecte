@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'conecte',
     'jc_contabilidade',
     'lg_distribuidora',
-
-
 ]
 
 MIDDLEWARE = [
@@ -77,6 +75,15 @@ TEMPLATES = [
         },
     },
 ]
+'''
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'andre.tecnologia@live.com'
+EMAIL_HOST_PASSWORD = 'ehqermcmnollblda'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'Equipe Conecte Online <noreply@conecteonline.com>'
+'''
 
 WSGI_APPLICATION = 'app.wsgi.application'
 
@@ -142,10 +149,6 @@ LOGIN_URL = '/login/'
 
 PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'static/assets/js', 'serviceworker.js')
 
-
-
-
-
 PWA_APP_NAME = 'Conecte'
 PWA_APP_DESCRIPTION = 'conecte.online'
 PWA_APP_THEME_COLOR = '#f9f9f9'
@@ -175,3 +178,6 @@ PWA_APP_SPLASH_SCREEN = [
 ]
 PWA_APP_DIR = 'ltr'
 PWA_APP_LANG = 'pt-BR'
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025

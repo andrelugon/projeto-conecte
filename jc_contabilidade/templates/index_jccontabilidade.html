@@ -131,22 +131,30 @@
 												<h2>Conheça nossos serviços</h2>
 												<p>Quanto mais empresas anunciam,<br>
 													mais serviços e produtos estarão disponíveis para consulta!</p>
+												<br>
 											</div>
 										</article>
 									</div>
 								{% endif %}
 							{% endfor %}
-							<hr>
+
 <!---------------------------------------------------- Contato -------------------------------------------------------->
 
-									{% for item in dados_gerais %}
-									<h6>{{ item.endereço }} - {{ item.bairro }} - {{ item.cidade }} - {{ item.estado }}</br>
-										Telefone: {{ item.telefone_fixo }} - WhatsApp: {{ item.celular_whatsapp}}</br>
-										E-mail: {{ item.email }}</br>
-										Atendimento das {{ item.horario_de_atendimento }}</br>
-									</h6>
-							        <br>
-									{%endfor%}
+							<hr>
+							<h2>Contato:</h2>
+							<br>
+
+
+
+
+							<ul class="contact">
+								{% for item in dados_gerais %}
+									<li class="icon solid fa-envelope">{{ item.email }}</li>
+									<li class="icon solid fa-phone">Fixo: {{ item.telefone_fixo }} / WhatsApp: {{ item.celular_whatsapp }}</li>
+									<li class="icon solid fa-clock">Atendimento das {{  item.horario_de_atendimento }}<br />
+									<li class="icon solid fa-map-marker-alt">{{  item.endereço }} {{  item.cidade }}-{{ item.estado }}<br />
+								{%endfor%}
+							</ul>
 						</div>
 					</div>
 
